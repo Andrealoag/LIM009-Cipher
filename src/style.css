@@ -1,1 +1,93 @@
-/* Acá va tu código */
+body {
+  background-image: url("https://i1.wp.com/www.reporteindigo.com/wp-content/uploads/2018/09/siria-muertos.jpg?zoom=1.5&fit=1024%2C576&ssl=1");
+  background-size: 1280px;
+  margin-left: 20%;
+}
+
+ul {
+ margin: 0px;
+ padding: 0px;
+ list-style: none;
+
+}
+
+ul li {
+ float: left;
+ width: 200px;
+ height: 40px;
+ background color: black;
+ opacity: .8;
+ line height: 40px;
+ text-align:center;
+ font-size:20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color:white;
+  display: block;
+
+}
+header .logo {
+max-width: 80px;
+margin-left: -20%;
+}
+
+
+#welcome { 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 2rem;
+  width: 33%;
+  margin:2rem;
+  float: right;
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+#polina button { 
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#polina button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background:rgba(0,0,0,0.5);
+  padding: .5rem;
+  transition: .6s background; 
+}
+a:hover{
+  background:rgba(0,0,0,0.9);
+}
+
+footer {
+color: white;
+position: absolute;
+background: rgb(10, 10, 10);
+left: 0;
+bottom: 0;
+height: 20px;
+width: 100%;
+padding: 10px 0;
+font-size: 12px;
+}
