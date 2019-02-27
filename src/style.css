@@ -80,6 +80,7 @@ a:hover{
   background:rgba(0,0,0,0.9);
 }
 
+/*
 footer {
 color: white;
 position: absolute;
@@ -88,6 +89,6 @@ left: 0;
 bottom: 0;
 height: 20px;
 width: 100%;
-padding: 10px 0;
+padding: 5px 0;
 font-size: 12px;
 }

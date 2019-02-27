@@ -24,15 +24,20 @@
 
   <div id="welcome">
     <h1>Welcome</h1>
-    <p>Ingresa tu código o etiqueta de ayuda</p>
+    <div id="i">
+        <p>Ingresa tu ID</p>
+        <input type="number" placeholder="Inserte su código" class="mensaje" id="txtOffset">
+      </div>
     <div id="one">
-      <input type="text" placeholder="Inserte su código" class="mensaje" id="mensaje">
+      <p>Escribe tu mensaje </p>
+      <input type="text" placeholder="Inserte su código" class="mensaje" id="mensaje1">
+
     </div>
 
-    <div><button id="boton1">Obtén tu etiqueta</button></div>
-    <div><button id="boton2">Obtén tu código</button></div>
-    <p><A>Aquí está tu código/etiqueta. Good Luck!!</A></p>
-    <p id="mensajeMostrado" class="mensajeMostrado"> </p>
+    <div><button id="boton1">Cifrar</button></div>
+    <div><button id="boton2">Descifrar</button></div>
+    <p><A>Aquí está tu mensaje codificado. Good Luck!!</A></p>
+    <textarea name="text" id="mensajeMostrado" cols="30" rows="10"></textarea>
 
 
     <p><a href="https://www.icrc.org/es">Volver</a>
@@ -42,10 +47,14 @@
   <script src="index.js"></script>
 
 
-
-  <footer>
+  <!---
+<footer>
     <div class="container">© 2019 INTERNATIONAL COMMITTEE OF THE RED CROSS. All rights reserved.</div>
   </footer>
+
+    --->
+  
+  
 </body>
 
 </html>
