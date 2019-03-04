@@ -8,7 +8,7 @@ const offset = document.getElementById("txtOffset");
 
 
 function cifrar(){
-    let textdeentrada = mensaje.value;
+    let textdeentrada = mensaje.value.toUpperCase();
     let coddespla = parseInt(offset.value);
     let nuevoMensaje = cipher.encode(coddespla,textdeentrada);
   mensajeMostrado.value = nuevoMensaje;
@@ -16,7 +16,7 @@ function cifrar(){
 boton1.addEventListener("click",cifrar);
 
 function descifrar(){
-    let textdeentrada = mensaje.value;
+    let textdeentrada = mensaje.value.toUpperCase();
     let coddespla = parseInt(offset.value);
     let nuevoMensaje = cipher.decode(coddespla,textdeentrada);
   mensajeMostrado.value = nuevoMensaje;

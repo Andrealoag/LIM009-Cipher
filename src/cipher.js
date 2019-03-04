@@ -8,7 +8,8 @@ window.cipher = {
           let lettercipher = String.fromCharCode(numberAscci);
           nuevoMensaje = nuevoMensaje + lettercipher;
         } else {
-          nuevoMensaje = nuevoMensaje+string[i];
+          
+      nuevoMensaje = nuevoMensaje+string[i];
         }
       }
         return nuevoMensaje;
@@ -22,7 +23,7 @@ window.cipher = {
           let lettercipher = String.fromCharCode(numberAscci);
           nuevoMensaje = nuevoMensaje + lettercipher;
         } else {
-          nuevoMensaje = nuevoMensaje+string[i];
+        nuevoMensaje = nuevoMensaje+string[i];
         }
       }
         return nuevoMensaje;
