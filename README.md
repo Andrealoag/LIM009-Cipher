@@ -52,28 +52,31 @@ El ministro de defensa sirio, ante la eficacia de la "Operación Jaque", armó u
 
 ## Explicación de "Checkmate Operation"
 
-10 agentes contratados por el gobierno sirio, entrarán a los territorios del Estado Islámico simulando ser miembros del Comité Internacional de la Cruz Roja, cabe resaltar que la Cruz Roja 
+10 agentes contratados por el gobierno sirio, entrarán a los territorios del Estado Islámico simulando ser miembros del Comité Internacional de la Cruz Roja, cabe resaltar que la CICR con una posición neutra, tiene el beneplácito de los Estados para brindar ayuda a los damnificados de los Conflictos Armados, siendo esto un recurso muy importante para nuestros agentes, ya que tendrán acceso a zonas que quizás otro militar o civil no puedan ingresar, por el simple hecho de estar dando ayuda humanitaria. Además deben usar la página web de donaciones como fachada, para encubrir mensajes secretos sobre la situación dentro de los territorios tomados por el Estado Islámico, trazando un plan de rescate que les permita acceder sin muertes al lugar donde se encuentran los rehenes.
 
 ## Recue and Technology Team
 
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
-
-There are two types of synchronization and they can complement each other:
-
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
-	> To start syncing your workspace, just sign in with Google in the menu.
-
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
-	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
+"Rescue and Techology Team", somos el equipo tecnológico de rescate que  implementará la web fachada para el envío de mensajes secretos.
+Contamos con profesionales de todo el mundo, especialistas en rescate, front-end, UX, backend y ciberseguridad.
+![enter image description here](https://msdn.microsoft.com/en-us/windows/hardware/dn913145.STB13-Ken%28en-us,MSDN.10%29.jpg)
 
 ## Asistencia legal, uso de los emblemas de la CICR y perfidia
 
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
+Al ser una operación con fines de rescate humanitario, la CICR, por medio de un acuerdo secreto, autorizó el uso del emblema y plataformas que ellos tienen, sin peligro de **perfidia**
+En el contexto de la guerra, la  **perfidia**  es una forma de engaño en la que una parte se compromete a actuar de buena fe (por ejemplo, izando una bandera de rendición) con la intención de romper esa promesa una vez que el enemigo se haya expuesto ante ellos (por ejemplo, esperando que salgan al descubierto con el fin de captar a las fuerzas que se rinden).
+
+Esta práctica está expresamente prohibida en virtud del  [Primer Protocolo Adicional a los Convenios de Ginebra del 12 de agosto de 1949](https://es.wikipedia.org/wiki/Protocolo_I "Protocolo I")
+
+La parte legal estará al tanto de las acciones de los agentes para que no incumplan con los acuerdos de Primer Protocolo.
+
 
 ## Donation Register Platform (web page)
 
 ![enter image description here](http://i68.tinypic.com/30wkw7n.png)
-La página "Donation Register Platform" ha sido diseñada para ser una página **FACHADA**
+
+ - La página "Donation Register Platform" ha sido diseñada para ser una página **FACHADA**
+ - Las partes de HOME-SREVICES-GALLERY-REVIEW-CONTACT no tienen ninguna funcionalidad, al no ser necesarias para nuestra misión.
+
 
 
 
@@ -113,6 +116,7 @@ El código de los agentes serán los siguientes:
 ### Atajos y opciones secretas
 
  - Presionando el logo en la parte superior izquierda de la página, podrán redirigirse a la página principar de la CICR, esto ante cualquier eventualidad o situación comprometedora con los del Estado Islámico.
+ **- Los agentes en los mensajes enviados, deberán poner su código de usuario.**
 
 ![enter image description here](http://i68.tinypic.com/fuax5j.jpg)
 # Notas
