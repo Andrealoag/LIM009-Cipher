@@ -124,4 +124,9 @@ El código de los agentes serán los siguientes:
  1. Este proyecto al ser de carácter internacional, se encuentra en el idioma **inglés**, además  los usuarios a utilizar esta página web son anglo parlantes.
  3. Este **README** es una traducción no oficial al proyecto, brindado para fines educativos.
  4. No existen razones personales, ni políticas, ni religiosas para apoyar al estado sirio, todo es netamente laboral, ya que he sido contratada como front - end developer.
+<<<<<<< HEAD
  5. Como mencioné anteriormente, no existiría delito de **perfidia**, al haber sido autorizados por la **CICR**.
+=======
+ 5. Como mencioné anteriormente, no existiría delito de **perfidia**, al haber sido autorizados por la **CICR**.
+
+>>>>>>> 7002a5a342e6ce3d65f5fcc04e746b65b921a506
