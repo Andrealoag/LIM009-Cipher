@@ -72,10 +72,9 @@ La parte legal estará al tanto de las acciones de los agentes para que no incum
 
 ## Donation Register Platform (web page)
 
-![enter image description here](http://i68.tinypic.com/30wkw7n.png)
+![enter image description here](http://img.fenixzone.net/i/g5Y6K84.png)
 
- - La página "Donation Register Platform" ha sido diseñada para ser una página **FACHADA**
- - Las partes de HOME-SREVICES-GALLERY-REVIEW-CONTACT no tienen ninguna funcionalidad, al no ser necesarias para nuestra misión.
+ - La página "Donation Register Platform" ha sido diseñada para ser una página **FACHADA** en la cuál los agentes puedan descifrar mensajes.
 
 
 
@@ -116,7 +115,8 @@ El código de los agentes serán los siguientes:
 ### Atajos y opciones secretas
 
  - Presionando el logo en la parte superior izquierda de la página, podrán redirigirse a la página principar de la CICR, esto ante cualquier eventualidad o situación comprometedora con los del Estado Islámico.
- **- Los agentes en los mensajes enviados, deberán poner su código de usuario.**
+ - Las opciones de Menú también te redirigen a las páginas mencionadas.
+ - La opción **CONTACT**, te redirige a un chat especial para los agentes, **por lo cual en los mensajes enviados, deberán poner su código de usuario, de alguna u otra manera.**
 
 ![enter image description here](http://i68.tinypic.com/fuax5j.jpg)
 # Notas
