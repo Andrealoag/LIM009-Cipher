@@ -1,10 +1,11 @@
 /*capturar mensaje
 */
+const offset = document.getElementById("txtOffset");
 const mensaje = document.getElementById("mensaje1");
 const boton1 = document.getElementById("boton1");
 const boton2 = document.getElementById("boton2");
 const mensajeMostrado = document.getElementById("mensajeMostrado");
-const offset = document.getElementById("txtOffset");
+
 
 
 function cifrar(){

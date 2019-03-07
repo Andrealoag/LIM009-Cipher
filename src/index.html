@@ -1,67 +1,89 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <link rel ="shortcut icon" href= "https://www.icrc.org/icon-256.png">
     <title>Donation Register Platform</title>
     <link rel="stylesheet" href="style.css" />
-   
-</head>
-<body>
-    <header class="header content">
-        <div class="header-video">
-          <video autoplay loop class="video-background" muted plays-inline>
-              <source src="https://www.icrc.org/sites/default/files/homepage_files/what-we-do-video_0.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="header-overlay"></div>
-     
-    <div class="header-content">
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <a href="https://www.icrc.org/"><img src ="http://i63.tinypic.com/35bwm52.jpg" class="logo"></a>
+          <input type="checkbox" id="menu-bar">
+          <label class="icon-menu" for="menu-bar"></label>
+                  <nav class="menu">
+                      <a href="https://www.icrc.org/en/who-we-are">Who we are</a>
+                      <a href="https://www.icrc.org/en/where-we-work">Where we work</a>
+                      <a href="https://www.icrc.org/en/support-us">Support us</a>
+                      <a href="https://chattusa.com/chat.php" target="_blank">Contact</a>
+                  </nav>
+              </div>
+  </header>
+          
+          <main>  <!-- Todo lo que está dentro será el contenido principal de la web -->
+              <section id="banner">
+                  <img src="https://s2.eestatic.com/2016/03/09/mundo/Guerra_en_Siria-Siria-Crisis_refugiados-Refugiados-Europa-Fronteras-MSF_Medicos_sin_Fronteras-Mundo_108250366_2273253_1706x960.jpg">
+                  <div class="contenedor">
+                      <h2>HELP!</h2>
+                      <p>"A GIFT OF HOPE"</p>
+                      <a href="https://www.icrc.org/en">Donate today</a>
+                  </div>
+              </section>
+              
+              <section id="bienvenidos">
+                  <div class="msg">
+                     <h1>Welcome to CICR Donation Register Platform</h1>
+                     <br>
+                     <div id="first">
+                        <p>Dear donor, enter the sender country code for the donations</p>
+                        <br>
+                        <input type="number" placeholder="Enter your code" class="mensaje" id="txtOffset"></div>
+                     <div id="one">
+                        <p>Now enter the type of donation to be registered in order to obtain a classification code (SEE MANUAL) </p>
+                        <br>
+                        <input type="text" placeholder="Type of donation" class="mensaje" id="mensaje1"></div>
+                    <a href="#" class="btn boton1" id="boton1">Region code</a>
+                    <a href="#" class="btn boton2" id="boton2">Provincial code</a>
+                     <div id="two">
+                        <p>¡ Here is your donation code !</p>
+                        <br>
+                        <textarea name="text" id="mensajeMostrado" ></textarea>
+                    </div>
+                 </div>
+              </section>
+              
+              <section id="info">
+                  <h2>KEY OPERATIONS</h2>
+                  <div class="contenedor">
+                      <div class="info-cicr">
+                          <img src="https://www.icrc.org/sites/default/files/styles/document_main/public/document/image/v-p-co-e-00129.jpg?itok=98vxPgNi">
+                          <h4>Helping detainees</h4>
+                      </div>
+                      <div class="info-cicr">
+                          <img src="https://www.icrc.org/sites/default/files/styles/document_main/public/document/image/family_reunion.jpg?itok=IPsh3SR5">
+                          <h4>Restoring family links</h4>
+                      </div>
+                      <div class="info-cicr">
+                          <img src="https://s1.reutersmedia.net/resources/r/?m=02&d=20090306&t=2&i=8546440&r=img-2009-03-07T033524Z_01_NOOTR_RTRMDNC_0_India-383877-1&w=1280">
+                          <h4>Protecting civilians</h4>
+                      </div>
+                  </div>
+              </section>
+          </main>
+          
+          <footer>
+              <div class="contenedor">
+                  <p id= "footer2">© 2019 INTERNATIONAL COMMITTEE OF THE RED CROSS. All rights reserved.</p>
+                  <div class="sociales">
+                      <a href="https://es-la.facebook.com/"><img src ="https://image.flaticon.com/icons/png/512/69/69407.png" class="logo"></a>
+                      <a href="https://twitter.com/?lang=es"><img src ="https://image.flaticon.com/icons/png/512/23/23681.png" class="logo"></a>
+                      <a href="https://www.instagram.com/?hl=es-la"><img src ="https://www.freeiconspng.com/uploads/instagram-logo-3-477-4-1-year-ago-9.png" class="logo"></a>
+                  </div>
+              </div>
+          </footer>
 
-          <div class="nav">
-            <a href="https://www.icrc.org/"><img src ="http://i63.tinypic.com/35bwm52.jpg" class="logo"></a>
-        
-          <ul class="menu">
-        <li><a href="https://www.icrc.org/en/who-we-are">Who we are</a></li>
-        <li><a href="https://www.icrc.org/en/what-we-do">What we do</a></li>
-        <li><a href="https://www.icrc.org/en/where-we-work">Where we work</a></li>
-        <li><a href="https://www.icrc.org/en/support-us">Support us</a></li>
-        <li><a href="https://chattusa.com/chat.php" target="_blank">Contact</a></li>
-        </ul>
-    </div>
-  </div>
-  
-    <div class ="msg">
-      <h1>Welcome to CICR Donation Register Platform</h1>
-      <div id="first">
-        <p>Dear donor, enter the sender country code for the donations</p>
-      <br>
-        <input type="number" placeholder="Enter your code" class="mensaje" id="txtOffset"></div>
-      
-        
-        <div id="one">
-        <p>Now enter the type of donation to be registered in order to obtain a classification code (SEE MANUAL) </p>
-      <br>
-         <input type="text" placeholder="Type of donation" class="mensaje" id="mensaje1">
-      
-        </div>
-
-      <a href="#" class="btn boton1" id="boton1">Region code</a>
-      <a href="#" class="btn boton2" id="boton2">Provincial code</a>
-
-      <div id="two">
-      <p>¡ Here is your donation code !</p>
-    <br>
-      <textarea name="text" id="mensajeMostrado" ></textarea>
-      </div>
-    </div>
-    <footer>
-      <div class="container">© 2019 INTERNATIONAL COMMITTEE OF THE RED CROSS. All rights reserved.</div>
-    </footer>
-  
-    </header>
-  
-  <script src="cipher.js"></script>
-  <script src="index.js"></script>
-</body>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>

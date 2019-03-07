@@ -1,113 +1,299 @@
-*
-{
+
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /*para que todo se contenga en un solo modelo de caja y 
+    cuando pongamos padding a otros elementos no se expandan*/
 }
-.video-background{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
-@media(min-aspect-ratio:16/9){
-    .video-background{
-        width: 100%;
-        height: auto;
+/*ESTILO HEADER*/
+.logo{
+    margin:7px 10px;
+    height:43px
+}
+header {
+    width: 100%;
+    height: 55px;
+    background:black;
+    color: #fff;
+    position: fixed; /* para que mi menu siempre quede perenne*/
+    top: 0;
+    left: 0;
+    z-index: 100;/*para que este siempre por delante de los demás elementos*/
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto; /*para que este alineado y centrado,al ser responsive*/
+}
+
+@media (min-width:1024px) {/*RESPONSIVE*/
+    .contenedor {
+        width: 1000px; /*PARA QUE ESTE ALINEADO*/
     }
 }
-header{
-    background: rgba(46, 43, 43, 0.5);
-    height:100vh;
-   
-}
-.nav{
-    background: rgba(0,0,0,.5);
-    height:80px;
-}
-.logo{
-    margin:10px 50px;
-    height:60px
+header .contenedor {
+    display: table;
 }
 
-.menu{
+/*ESTILO MENU*/
+#menu-bar {
+    display: none;
+}
+
+header label {
     float: right;
-    list-style:none;
-    margin:20px;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer; /*aparezca una mano, en vez de una flecha*/
 }
 
-.menu li{
-    display: inline-block;
-    margin: 10px 5px;
+.icon-menu{
+    display: block;
+    border:1px solid white;
+    border-radius: 3px;
+    width:40px;
+    height:40px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.menu {
+    position: absolute; /*sacar el menú cuando haga click*/
+    top: 50px; /*para que comience desde abajo del ícono*/
+    left: 0;
+    width: 100%;
+    height: 100vh;/*el vh es para que me ocupe siempre esa medida en el alto de la ventana*/
+    background: rgba(0,0,0,0.9); /* el 0.9 es la transparencia*/
+    transition: all 0.5s; /*desplazamiento del menú*/
+    transform: translateX(-100%);
 }
 
-.menu li a{
-    text-decoration: none;
+.menu a {
+    display: block;
     color: #fff;
-    padding: 5px 10px;
-    font-family:sans-serif;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background:  rgba(235, 217, 217, 0.3);
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%); 
+}
+
+@media (min-width:1024px) {/*RESPONSIVE*/
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    
+    .menu a {
+        border: none;
+    }
+    
+    header label { 
+        display: none;
+    }
+}
+
+/*BANNER*/
+#banner {
+    margin-top: 50px; /*para que empiece abajo del header*/
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor {
+    position: absolute; /*se posicionará según #baner*/
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); /*siempre estará en medio*/
+    color: #fff;
+}
+
+.contenedor p{
+    font-size: 28px;
+    color:rgb(223, 12, 12);
+    font-weight: bold;
+    text-shadow: 1px 1px #000000;
+    
+}
+.banner h2 {
+    font-size: 45px;
+}
+
+#banner a { /*etiqueta SEE MORE*/
+    display: block;
+    width: 130px;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    background: black;
+}
+
+#banner a:hover {
+    background: rgba(51,51,51,0.5);
+}
+
+
+@media (min-width:480px) {/*El h2 cambiará cuando sea 480px*/
+    #banner h2 {
+        font-size: 100px;
+        text-shadow: 2px 2px black;
+        margin-bottom: 20px;
+    }
+    
+    #banner a {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:768px) { /*tamaño para tablet*/
+    #banner {
+        height: 390px;
+        overflow: hidden; /*para que la imagen no se salga del banner*/
+    }
+    
+    #banner img {
+        height: auto;
+        margin-top: -100px;
+    }
+}
+
+@media (min-width:1024px) { 
+    #banner img {
+        margin-top: -270px;
+    }
+}
+
+
+@media (min-width:480px) {
+    .info-pet {
+        width: 40%;
+    }
+}
+
+@media (min-width:1024px) {
+    .info-pet {
+        width: auto;
+    }
+}
+
+/*SECCIÓN BIENVENIDOS*/
+#bienvenidos {
+    text-align: center;
+    background: black;
+}
+.btn{
+    font-size:18px;
+    color:#fff;
     letter-spacing:2px;
-    border-bottom: 1px solid #fff;
-}
-.menu li a:hover{
-    background: rgb(231, 37, 37);
-    border-bottom: 1px solid rgb(231, 37, 37);
+    padding: 0.5rem;
+    text-decoration: none;
+    font-family:'Segoe UI';
+    font-weight: bold;
+    
+  }
+  
+  .boton1{
+    background:  rgb(231, 37, 37);
+    color: #fff;
+  }
+  
+  .boton2{
+    background:  rgb(231, 37, 37);
+    color: #fff;
+  }
+  .boton1:hover{
+    background: black;
+    transition: .4s
+  }
+  .boton2:hover{
+    background: black;
     transition: .4s;
-}
-.msg {
+  }
+  .msg {
     position:relative;
     text-align:center ;
     font-family:sans-serif;
-    color: #fff;
-    top: 60px;
+    color: white;
+
     justify-content: center;
     height: 20%;
     align-items: center;
-    margin:0em;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom:28px;
     
-   
+}
+#txtOffset{
+    border-radius: 25px;
+    padding: 5px;
+    font-family: Helvetica, sans-serif;
+    width: 145px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    
+    
+}
+
+#mensaje1{
+    border-radius: 25px;
+    padding: 5px;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#mensajeMostrado{
+    padding: 2px;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    
+    
 }
 .msg h1{
-    font-size:54px;
-    margin:15px;
-  
-  
+    font-size:58px;
+    margin:0px;
+    justify-content: center;
+    padding-top:35px;
     
 }
 
-.btn{
-  font-size:18px;
-  color:#fff;
-  letter-spacing:2px;
-  padding: 0.5rem;
-  text-decoration: none;
-  font-family:'Segoe UI';
-  font-weight: bold;
-  
+#first{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width:100%;
 }
-
-.boton1{
-  background:  rgb(231, 37, 37);
-  color: #fff;
-}
-
-.boton2{
-  background:  rgb(231, 37, 37);
-  color: #fff;
-}
-.boton1:hover{
-  background: black;
-  transition: .4s
-}
-.boton2:hover{
-  background: black;
-  transition: .4s;
-}
-
 #one{
     margin-top: 20px;
     margin-bottom: 30px;
@@ -117,42 +303,76 @@ header{
 
 #two{
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     width:100%;
 }
-.msg p{
-    font-family: Arial;
+
+/*SECCIÓN INFO*/
+#info {
+    background: rgb(151, 145, 145);
     color: #fff;
-    font-size: 18px;
-
+    text-align: center;
+    padding: 20px;
 }
 
-#txtOffset{
-    border-radius: 25px;
-    padding: 5px;
+#info .contenedor { 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    font-family: Helvetica, sans-serif;
-    width: 115px;
-    font-size: 13px
 }
 
-#mensaje1{
-    border-radius: 25px;
-    padding: 5px;
+.info-cicr {
+    margin: 20px;
+}
+
+.info-cicr img {
+    width: 180px;
+    height: 180px;
+    border-radius: 0%;
+    border: 1px solid #fff;
+}
+
+/*FOOTER*/
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    font-family: Helvetica, sans-serif;
-
+    padding-bottom: 15px;
 }
-footer {
-    color: white;
-    position: absolute;
-    background: rgb(10, 10, 10);
-    left: 0;
-    bottom: -30px;
-    height: 20px;
-    width: 100%;
-    padding: 5px 0;
-    font-size: 11px;
-    font-family: sans-serif;
+
+
+@media (min-width:768px) { 
+    .sociales {
+        width: auto;
     }
     
+    footer .contenedor {
+        justify-content: space-between;
+        font-size: 23px,
+    }
+}
+
+#footer2{
+    color: black;
+    font-size: 20px;
+    text-shadow: 0px 0px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+section { /*para que todas las secciones tengan ese tamaño*/
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+

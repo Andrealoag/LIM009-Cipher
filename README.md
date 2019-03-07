@@ -72,7 +72,7 @@ La parte legal estará al tanto de las acciones de los agentes para que no incum
 
 ## Donation Register Platform (web page)
 
-![enter image description here](http://img.fenixzone.net/i/g5Y6K84.png)
+![enter image description here](http://i66.tinypic.com/2rf8uoo.png)
 
  - La página "Donation Register Platform" ha sido diseñada para ser una página **FACHADA** en la cuál los agentes puedan descifrar mensajes.
 
@@ -128,5 +128,3 @@ El código de los agentes serán los siguientes:
  5. Como mencioné anteriormente, no existiría delito de **perfidia**, al haber sido autorizados por la **CICR**.
 =======
  5. Como mencioné anteriormente, no existiría delito de **perfidia**, al haber sido autorizados por la **CICR**.
-
->>>>>>> 7002a5a342e6ce3d65f5fcc04e746b65b921a506
